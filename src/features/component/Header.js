@@ -5,6 +5,11 @@ import bulb from '../../static/bulb.png';
 import {
     ImageScroller,
 } from './util';
+import {
+    img1,
+    img2
+} from './config';
+
 export default class Header extends React.PureComponent{
     state={
         clickonlogo: false,
@@ -23,9 +28,9 @@ export default class Header extends React.PureComponent{
                     <h3 className={ prefix + "heading-1" }>INNOVATION</h3>
                     <img src={bulb} className={ prefix + "bulb" } alt="bulb" />
                 </div>
-                <ImageScroller style={{ float: 'left' }} />
+                <ImageScroller style={{ float: 'left' }} img={img1} />
                 <img onClick={this.toggleHeader} src={logo} className={ prefix + "logo" } alt="logo" />
-                <ImageScroller style={{ float: 'right' }} />
+                <ImageScroller style={{ float: 'right' }} img={img2} />
                 <h3 className={ prefix + 'heading-2' }>GARAGE</h3>
             </header>
         )
