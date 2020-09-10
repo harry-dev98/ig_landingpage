@@ -1,0 +1,152 @@
+.header {
+    background-color: black;
+    min-height: 88.75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+}
+
+.after-click-header {
+    background-color: black;
+    max-height: 15vh;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    border-bottom-width: 2px;
+    border-bottom-color: yellow;
+    border-bottom-style: dashed;
+}
+
+.logo {
+    height: 30vmin;
+    animation: logo-float infinite 5s linear;
+}
+
+.after-click-logo {
+    left: 2vmin;
+    position: absolute;
+    padding-top: 5px;
+    height: 7.5vmin;
+}
+
+@keyframes logo-float {
+    25% {
+        transform: translateY(-10%);
+    }
+    75% {
+        transform: translateY(10%);
+    }
+}
+
+.logo:hover{
+    animation: logo-rotate infinite 5s ease-in-out;
+}
+
+@keyframes logo-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+        opacity: 0.5;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+.heading-1,
+.heading-2 {
+    color: yellow;
+    font-size: 72px;
+    cursor: default;
+}
+
+.after-click-heading-1,
+.after-click-heading-2 {
+    color: yellow;
+    font-size: 22px;
+    cursor: default;
+}
+
+.heading-1{
+    animation-name: text-1;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.after-click-bulb {
+    width: 3vmin;
+    height: 3vmin;
+    animation-name: bulb;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+
+.bulb{
+    width: 5vmin;
+    height: 5vmin;
+    animation-name: bulb;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes text-1{
+    0% {
+        transform: scale(0);
+        opacity: 0;
+        display: none;
+    }
+    75% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bulb{
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.heading-2{
+    animation-name: text-2;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+}
+
+@keyframes text-2{
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+        display: none;
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,12 @@
+.footer{
+    background-color: black;
+    min-height: 11vh;
+    border-top-width: 2px;
+    border-top-color: yellow;
+    border-top-style: dashed;
+}
+
+.footer-text{
+    color: yellow;
+    cursor: default;
+}
