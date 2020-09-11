@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Header,
   Footer,
+  Content,
 } from './util';
 import './Root.css';
 
@@ -19,10 +20,10 @@ class Root extends React.Component{
           <div className="Root">
             <Header toggleBody={ this.toggleBody }/>          
             {!this.state.activeHeader?
-              <div style={{ minHeight: '77.5vh' }}>
-                <h1 style={{ color: 'yellow' }}>This is Body</h1>
-              </div>: <></>}
-            <Footer />
+              <Content />:
+              <Footer />
+            }
+            
           </div>
         );
     }

@@ -28,9 +28,14 @@ export default class Header extends React.PureComponent{
                     <h3 className={ prefix + "heading-1" }>INNOVATION</h3>
                     <img src={bulb} className={ prefix + "bulb" } alt="bulb" />
                 </div>
-                <ImageScroller style={{ float: 'left' }} img={img1} />
-                <img onClick={this.toggleHeader} src={logo} className={ prefix + "logo" } alt="logo" />
-                <ImageScroller style={{ float: 'right' }} img={img2} />
+                {this.state.clickonlogo?
+                    <img onClick={this.toggleHeader} src={logo} className={ prefix + "logo" } alt="logo" />:
+                    <div style={{display: 'inline-flex', justifyContent: 'space-between', width: '100%'}}>
+                        <ImageScroller style={{ justifySelf: 'left' }} img={img1} />
+                        <img onClick={this.toggleHeader} src={logo} className={ prefix + "logo" } alt="logo" />
+                        <ImageScroller style={{ justifySelf: 'right' }} img={img2} />
+                    </div>
+                }
                 <h3 className={ prefix + 'heading-2' }>GARAGE</h3>
             </header>
         )

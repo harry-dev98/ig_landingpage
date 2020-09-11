@@ -1,0 +1,27 @@
+
+.scroller{
+    display: flex;
+    pointer-events: none;
+}
+
+.scroller-image {
+    height: 30vmin;
+    width: 30vmax;
+    margin: 10px;
+    animation: image-popouts infinite 5s ease-in-out;
+    animation-delay: 8s;
+    animation-fill-mode: backwards;
+    border-radius: 20px;
+}
+
+@keyframes image-popouts{
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+        display: none;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,26 @@
+.what-we-do{
+    background-image: url("https://raw.githubusercontent.com/harry-dev98/ig_landingpage/master/src/static/ig.jpg");
+    background-color: black;
+    min-height: 91.5vh;
+}
+
+.events{
+    background-color: #101820FF;
+    min-height: 91.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.about-us {
+    background-color: rgb(33, 47, 41);
+    min-height: 91.5vh;
+}
+
+p{
+    color: white;
+    margin-top: 0;
+    padding: 20px;
+}
