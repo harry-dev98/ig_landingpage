@@ -1,5 +1,28 @@
 .card {
     height: 80vmin;
-    width: 80vmax;
+    width: 90vmax;
+    display: inline-flex;
     background-color: aliceblue;
+}
+
+.left,
+.right{
+    flex: 1;
+}
+
+.left:active {
+    opacity: 0.92;
+
+}
+.right:active {
+    opacity: 0.92;
+}
+
+.card-content{
+    flex: 10;
+}
+
+.card-image{
+    width: 80vmax;
+    height: 80vmin;
 }

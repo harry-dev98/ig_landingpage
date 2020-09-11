@@ -1,6 +1,8 @@
 .what-we-do{
     background-image: url("https://raw.githubusercontent.com/harry-dev98/ig_landingpage/master/src/static/ig.jpg");
     background-color: black;
+    background-size: cover;
+    opacity: 0.75;
     min-height: 91.5vh;
 }
 
@@ -10,8 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
 }
 
 .about-us {
@@ -20,7 +20,7 @@
 }
 
 p{
-    color: white;
+    color: black;
     margin-top: 0;
     padding: 20px;
 }
